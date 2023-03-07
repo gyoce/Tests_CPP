@@ -7,16 +7,27 @@ This repo depends on [GoogleTest](https://github.com/google/googletest).
 # Explanations
 .
 \- - src
+
 \- - - - MyProject
+
 \- - - - - - src
+
 \- - - - - - - - MyClass.cpp
+
 \- - - - - - - - MyClass.hpp
+
 \- - - - - - CMakeLists.txt **<- define library MyLibrary**
+
 \- - - - Main.cpp
+
 \- - - - CMakeLists.txt **<- use MyLibrary & define main executable**
+
 \- - tests
+
 \- - - - UnitTests
+
 \- - - - - - MyClassTest.cpp 
+
 \- - - - CMakeLists.txt **<- use MyLibrary & define test executable**
 
 
