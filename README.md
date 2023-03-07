@@ -1,11 +1,13 @@
 # Test your C++ code with GoogleTest
 
 This is a repo to help you start your journey about testing your C++ code with GoogleTest and CMake with >= C++14.
+
 This repo depends on [GoogleTest](https://github.com/google/googletest).
 
 
 # Explanations
 .
+
 \- - src
 
 \- - - - MyProject
