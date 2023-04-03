@@ -1,4 +1,5 @@
 # Test your C++ code with GoogleTest
+![Test](https://github.com/gyoce/Tests_CPP/actions/workflows/cmake.yml/badge.svg)
 
 This is a repo to help you start your journey about testing your C++ code with GoogleTest and CMake with >= C++14.
 
