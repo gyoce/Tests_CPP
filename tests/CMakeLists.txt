@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 3.8)
 
-set(TestExecName ${PROJECT_NAME}_Tests)
-
 include_directories(
-    ../external/googletest/googletest/include
-    ../external/googletest/googlemock/include
-    ../src/MyProject/src
+    ${CMAKE_ROOT_DIR}/external/googletest/googletest/include
+    ${CMAKE_ROOT_DIR}/external/googletest/googlemock/include
+    ${CMAKE_ROOT_DIR}/src/MyProject/src
 )
 
-add_executable(${TestExecName}
+add_executable(${TEST_EXEC_NAME}
     UnitTests/MyClassTest.cpp
 )
 
-target_link_libraries(${TestExecName} MyLibrary gtest gtest_main)
+target_link_libraries(${TEST_EXEC_NAME} ${CUSTOM_LIBRARY} gtest gtest_main)
+include(GoogleTest)
+gtest_discover_tests(${TEST_EXEC_NAME})

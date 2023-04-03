@@ -52,16 +52,15 @@ cmake --build .
 1. Open the directory in Visual Studio
 2. Press CTRL + SHIFT + B
 
-## How to run with CMake CLI  :
-After building do :
-```bash
-./[PATH_TO]/CPP_Tests.exe
-```
-to run the test executable and :
+## How to run inside terminal  :
+After building run the main executable with :
 ```bash
 ./[PATH_TO]/CPP.exe
 ```
-to run the main executable
+You can run test with the command (inside the build directory) :
+```
+ctest
+```
 
 ## How to run with Visual Studio :
 1. Open the directory in Visual Studio
@@ -73,5 +72,5 @@ mkdir build
 cd build
 cmake .. -G "Visual Studio 17 2022"
 cmake --build .
-.\tests\Debug\CPP_Tests.exe
+ctest
 ```
