@@ -65,7 +65,7 @@ ctest
 
 ## How to run with Visual Studio :
 1. Open the directory in Visual Studio
-2. Select Startup Item (CPP.exe for main & CPP_Tests.exe for tests)
+2. Select Startup Item (CPP.exe for main & CPPTests.exe for tests)
 
 ## Exemple with Visual Studio 17 2022 Generator & CMake CLI
 ```bash
